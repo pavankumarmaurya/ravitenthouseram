@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - Ravi Tent House</title>
+    <style>
+        
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+        }
+        h1{
+            text-align:center;
+            padding:20px;
+            background:#e40303;
+            color:#ff9800;
+        }
+        .gallery{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:10px;
+            padding:20px;
+             transition:0.3s;
+        .box{
+            background:white;
+            border-radius:8px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+        .box:hover{
+            transform:scale(1.05);
+        }
+        .box img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+        .detail{
+            padding:10px;
+            text-align:center;
+            font-size:16px;
+            font-weight:bold;
+        }
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:12px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+<h1>RAVI TENT HOUSE – GALLERY</h1>
+<div class="gallery">
+    <div class="box">
+        <img src="Wedding.jpg">
+        <div class="detail">Wedding Tent Decoration</div>
+    </div>
+    <div class="box">
+        <img src="Royal.jpg">
+        <div class="detail">Royal Stage Setup</div>
+    </div>
+    <div class="box">
+        <img src="Birthday.jpg">
+        <div class="detail">Birthday Party Tent</div>
+    </div>
+    <div class="box">
+        <img src="Mandap.jpg">
+        <div class="detail">Mandap Decoration</div>
+    </div>
+    <div class="box">
+        <img src="Lighting.jpg">
+        <div class="detail">Lighting & Flower Setup</div>
+    </div>
+    <div class="box">
+        <img src="Outdoor.jpg">
+        <div class="detail">Outdoor Event Tent</div>
+    </div>
+    <div class="box">
+        <img src="Reception.jpg">
+        <div class="detail">Reception Decoration</div>
+    </div>
+    <div class="box">
+        <img src="VIP.jpg">
+        <div class="detail">VIP Sitting Arrangement</div>
+    </div>
+    <div class="box">
+        <img src="images (3).jpg">
+        <div class="detail">Catering Tent Area</div>
+    </div>
+    <div class="box">
+        <img src="Wedding.jpg">
+        <div class="detail">Complete Event Setup</div>
+    </div>
+</div>
+<footer>
+    <center>© 2025 Ravi Tent House | Gallery</center>
+</footer>
+</body>
+</html>

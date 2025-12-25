@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Booking - Ravi Tent House</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:color white;
+        }
+
+        h1{
+            text-align:center;
+            color:#ff9800;
+            padding:20px;
+        }
+
+        .form-box{
+            background:rgb(57, 121, 188);
+            max-width:500px;
+            margin:20px auto;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 15px pink;
+        }
+
+        label{
+            font-weight:bold;
+            display:block;
+            margin-top:15px;
+        }
+
+        select, input[type="date"], input[type="text"], textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:15px;
+        }
+
+        .extras{
+            margin-top:10px;
+        }
+
+        .extras input{
+            margin-right:5px;
+        }
+
+        button{
+            margin-top:20px;
+            width:100%;
+            padding:12px;
+            background:#ff9800;
+            border:none;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            border-radius:5px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#e68900;
+        }
+
+        .more-box{
+            display:none;
+            margin-top:10px;
+        }
+
+        footer{
+            margin-top:30px;
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:12px;
+            font-size:14px;
+        }
+    </style>
+
+    <script>
+        function toggleMore(){
+            var box = document.getElementById("moreText");
+            if(box.style.display === "none"){
+                box.style.display = "block";
+            }else{
+                box.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<h1>🎉 Event Booking – Ravi Tent House</h1>
+
+<div class="form-box">
+
+    <!-- Event Name -->
+    <label>Choose Event Name</label>
+    <select>
+        <option>Select Event</option>
+        <option>Wedding</option>
+        <option>Birthday Party</option>
+        <option>Reception</option>
+        <option>Engagement</option>
+        <option>Corporate Event</option>
+    </select>
+
+    <!-- Date -->
+    <label>Choose Event  start Date</label>
+    <input type="date">
+    <label>Choose Event  End Date</label>
+    <input type="date">
+
+    <!-- Area -->
+    <label>Event Area / Location</label>
+    <input type="text" placeholder="Enter event area">
+
+    <!-- Extra Order -->
+    <label>Extra Order</label>
+    <div class="extras">
+        <input type="checkbox"> Lighting <br>
+        <input type="checkbox"> Flower Decoration <br>
+        <input type="checkbox"> DJ Sound <br>
+        <input type="checkbox"> Catering Setup
+    </div>
+
+    <!-- Write More -->
+    <label>
+        <input type="button" onclick="toggleMore()"> Write More Details
+    </label>
+
+    <div class="more-box" id="moreText">
+        <textarea rows="4" placeholder="Write your extra requirements here..."></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button>Submit Booking</button>
+
+</div>
+
+<footer>
+    © 2025 Ravi Tent House | Event Booking
+</footer>
+
+</body>
+</html>
